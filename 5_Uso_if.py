@@ -5,6 +5,10 @@ numero2 = int(input("Ingrese el segundo numero: "))
 
 if numero1 >= numero2 and numero1 % numero2 == 0:
     print(f"{numero1} es multiplo de {numero2}")
+elif numero1 < 0 or numero2 < 0:
+    print("Lo siento, este programa no admite valores negativos.")
+elif numero1 == 0 or numero2 == 0:
+    print("Lo siento, este programa no admite valores nulos.")
 elif numero1 >= numero2 and numero1 % numero2 != 0:
     print(f"{numero1} no es multiplo de {numero2}")
 elif numero2 > numero1 and numero2 % numero1 == 0:
